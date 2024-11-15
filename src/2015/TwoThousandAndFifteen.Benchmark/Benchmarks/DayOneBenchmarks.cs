@@ -11,4 +11,11 @@ public class DayOneBenchmarks
 
     [Benchmark(Baseline = true)]
     public int ForLoop() => _solver.PartOne(PuzzleInput);
+
+    [Benchmark]
+    public int SelectUp() => _solver.PartOneSelect(PuzzleInput);
+    [Benchmark]
+    public int GAggregate() => _solver.PartOneGPTAggregate(PuzzleInput);
+    [Benchmark]
+    public int GptSpan() => _solver.PartOneGPTSpan(PuzzleInput);
 }
