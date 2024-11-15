@@ -1,0 +1,2 @@
+﻿dotnet build ./TwoThousandAndFifteen.Lib/TwoThousandAndFifteen.Lib.csproj --configuration Release
+dotnet run --project ./TwoThousandAndFifteen.Benchmark/TwoThousandAndFifteen.Benchmark.csproj --configuration Release

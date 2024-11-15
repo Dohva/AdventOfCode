@@ -1,7 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\TwoThousandAndFifteen.Console\TwoThousandAndFifteen.Console.csproj" />
     <ProjectReference Include="..\TwoThousandAndFifteen.Lib\TwoThousandAndFifteen.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
   </ItemGroup>
 
   <PropertyGroup>
