@@ -9,6 +9,7 @@ public class DayTwoSolution : IDayTwoSolution
 
         foreach (var box in boxSpecifications)
         {
+            if (string.IsNullOrWhiteSpace(box)) continue;
             sum += CalculateBoxArea(CreateBoxByDimensionString(box));
         }
 

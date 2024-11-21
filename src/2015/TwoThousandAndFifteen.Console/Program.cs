@@ -3,7 +3,8 @@ using TwoThousandAndFifteen.Console.Apps;
 
 string[] completedDays =
 [
-    "1"
+    "1",
+    "2"
 ];
 
 var sb = new StringBuilder();
@@ -20,8 +21,12 @@ switch (Console.ReadLine())
 {
     case "1":
     {
-        var dayOneApp = new DayOneResult();
-        Console.WriteLine(dayOneApp.Result());
+        Console.WriteLine(new DayOneResult().Result());
+        break;
+    }
+    case "2":
+    {
+        Console.WriteLine(new DayTwoResult().Result());
         break;
     }
     default:

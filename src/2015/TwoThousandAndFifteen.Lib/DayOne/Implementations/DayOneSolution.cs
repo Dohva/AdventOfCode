@@ -38,6 +38,8 @@ public class DayOneSolution : IDayOneSolution
 
         return result;
     }
+    
+    
 
     public int PartTwo(string floors)
     {
